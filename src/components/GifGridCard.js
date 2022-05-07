@@ -13,9 +13,9 @@ export const GifGridCard = ({ url, title }) => {
           image={url}
           alt='gif'
         />
-        <CardContent>
-          <Typography gutterBottom variant='h7' component='div' sx={{ textAlign: 'center', textTransform: 'Uppercase' }}>
-            {title} 
+        <CardContent sx={{ height: '40px' }}>
+          <Typography gutterBottom variant='h7' component='div' sx={{ textAlign: 'center', textTransform: 'Uppercase', display: '-webkit-box', textOverflow: 'ellipsis', overflow: 'hidden', WebkitBoxOrient: 'vertical', WebkitLineClamp: '2' }}>
+            {title}
           </Typography>
         </CardContent>
       </Card>
