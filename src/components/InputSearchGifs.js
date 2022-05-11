@@ -2,29 +2,33 @@ import { FormControl, InputAdornment, InputLabel, OutlinedInput } from '@mui/mat
 import React, { useState } from 'react'
 import { FaSearch } from 'react-icons/fa'
 
-export const InputSearchGifs = () => {
+export const InputSearchGifs = ({setValueSearch}) => {
   const [value, setValue] = useState('')
 
   const handleSearch = (e) =>{
-    e.preventDefault();
-    console.log(value);
+    e.preventDefault(); 
+    value !== '' && setSearch()
   }
   
   const handleClickSearch = () => {
-    console.log(value);
-
+    value !== '' && setSearch()
   }
 
+  const setSearch = () => {
+    setValueSearch(value)
+    setValue('')
+  }
+  
   return (
     <>
       <form onSubmit={handleSearch}>
-        <FormControl sx={{ m: 1, width: '60%', marginLeft: '20%' }} variant="outlined" size='small'>
+        <FormControl sx={{ mt: 1, mb: 5, width: '60%', marginLeft: '20%' }} variant="outlined" size='small'>
             <InputLabel htmlFor="outlined-adornment-search">Buscar Gifs</InputLabel>
             <OutlinedInput
                 id="outlined-adornment-search"
                 type={'text'}
                 endAdornment={
-                  <InputAdornment position="end" sx={{cursor: 'pointer',":hover":{color:'red'}}}>
+                  <InputAdornment position="end" sx={{cursor: 'pointer',":hover":{color:'#1976D2'}}}>
                     <FaSearch onClick={handleClickSearch}/>
                   </InputAdornment>
                 }

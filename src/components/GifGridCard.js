@@ -1,4 +1,4 @@
-import { Card, CardContent, CardMedia, Typography } from '@mui/material'
+import { Card, CardContent, CardMedia, Grow, Typography } from '@mui/material'
 import PropTypes from 'prop-types';
 import React from 'react'
 
@@ -6,6 +6,8 @@ export const GifGridCard = ({ url, title }) => {
 
   return (
     <>
+    <Grow in={true}>
+  
       <Card sx={{ maxWidth: '100%' }}>
         <CardMedia
           component='img'
@@ -19,6 +21,7 @@ export const GifGridCard = ({ url, title }) => {
           </Typography>
         </CardContent>
       </Card>
+      </Grow>
     </>
   )
 }
