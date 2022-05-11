@@ -1,4 +1,3 @@
-import React from 'react';
 
 export const getGifs = async(category)=>{
 
