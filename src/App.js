@@ -1,16 +1,16 @@
-import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom';
+import { Route, Routes, Navigate, HashRouter } from 'react-router-dom';
 import { Home } from './containers/Home'
 import './App.css';
 
 function App() {
   return (
     <>
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='*'  element={<Navigate replace to='/' />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </>
   );
 }
