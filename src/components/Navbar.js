@@ -19,7 +19,7 @@ export const Navbar = () => {
         aria-label='repositorio github'
         size="large"
         sx={{ display: 'block', marginLeft: 'auto' }}>
-        <a href='https://github.com/lbanegas7/GitApp_MUI' target='_blank' rel='noopener noreferrer'>
+        <a href='https://github.com/lbanegas7/GifApp_MUI' target='_blank' rel='noopener noreferrer'>
           <FaGithub />
         </a>
       </IconButton>
