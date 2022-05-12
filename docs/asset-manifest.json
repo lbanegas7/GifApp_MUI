@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.3e0ec98f.css",
-    "main.js": "/static/js/main.2296c250.js",
-    "index.html": "/index.html",
-    "main.3e0ec98f.css.map": "/static/css/main.3e0ec98f.css.map",
-    "main.2296c250.js.map": "/static/js/main.2296c250.js.map"
+    "main.css": "/GifApp_MUI/static/css/main.3e0ec98f.css",
+    "main.js": "/GifApp_MUI/static/js/main.2296c250.js",
+    "index.html": "/GifApp_MUI/index.html",
+    "main.3e0ec98f.css.map": "/GifApp_MUI/static/css/main.3e0ec98f.css.map",
+    "main.2296c250.js.map": "/GifApp_MUI/static/js/main.2296c250.js.map"
   },
   "entrypoints": [
     "static/css/main.3e0ec98f.css",
